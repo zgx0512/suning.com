@@ -1,0 +1,606 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 双伪元素清除浮动 */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+
+body {
+  width: 10rem;
+  max-width: 750px;
+  min-width: 320px;
+  margin: 0 auto;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  color: #333;
+  font-family: Arial, Helvetica, STHeiTi, sans-serif;
+}
+
+/* 头部模块样式 */
+header {
+  width: 100%;
+  height: 2.4rem;
+  background: url(../images/bg.jpg) no-repeat 0px -1.0133rem;
+  background-size: 100% auto;
+  background-color: pink;
+}
+
+.hd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4533rem;
+  height: 1.1733rem;
+}
+
+.hd a:first-child,
+.hd a:nth-child(3) {
+  width: 0.48rem;
+  height: 0.8rem;
+}
+
+.hd a:nth-child(2) {
+  width: 5.2rem;
+  height: 1.0133rem;
+}
+
+.hd a img {
+  width: 100%;
+}
+
+/* 搜索框样式 */
+.search {
+  /*弹性布局*/
+  display: flex;
+  align-items: center;
+  width: 9.36rem;
+  height: 0.84rem;
+  margin: 0.2rem auto 0.1333rem;
+  background-color: #fff;
+  border-radius: 0.84rem;
+  font-size: 0.3467rem;
+  color: #757575;
+  /*鼠标小手样式*/
+  cursor: pointer;
+}
+
+.search img {
+  width: 0.88rem;
+  padding: 0 0.1333rem 0 0.2667rem;
+}
+
+/*快捷导航栏模块样式*/
+nav {
+  height: 4.2667rem;
+  background: url(../images/nav-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  flex: 20%;
+  height: 1.8933rem;
+}
+
+nav ul li a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 1.8933rem;
+  font-size: 0.2667rem;
+  color: #666;
+}
+
+nav ul li a img {
+  width: 1.12rem;
+  height: 1.12rem;
+}
+
+/*主会场模块样式*/
+.venue {
+  display: flex;
+}
+
+.venue a {
+  flex: 1;
+}
+
+.venue a img {
+  width: 100%;
+}
+
+/*主会场下面的模块样式*/
+.two-wrap {
+  display: flex;
+  padding: 0 0.1333rem 0 0.4rem;
+  height: 12.4267rem;
+  margin-bottom: 0.5333rem;
+}
+
+.two-wrap ul {
+  flex: 1;
+}
+
+.two-wrap .left,
+.two-wrap .right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.two-wrap .left li,
+.two-wrap .right li {
+  flex: 1;
+  display: flex;
+  margin: 0 0.2rem 0.2rem 0;
+}
+
+.two-wrap .left li a,
+.two-wrap .right li a {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.6rem;
+}
+
+.two-wrap .left li a div,
+.two-wrap .right li a div {
+  position: relative;
+  width: 2.0533rem;
+  height: 2.0533rem;
+}
+
+.two-wrap .left li a div img,
+.two-wrap .right li a div img {
+  width: 100%;
+}
+
+.two-wrap .left li a div span,
+.two-wrap .right li a div span {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.3733rem;
+  line-height: 0.3733rem;
+  text-align: center;
+  font-size: 0.2933rem;
+  border-radius: 0.3733rem;
+  box-sizing: content-box;
+}
+
+.two-wrap .left li:nth-child(1) a {
+  background: url(../images/大聚惠.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.two-wrap .left li:nth-child(1) a span {
+  padding: 0 0.16rem;
+  background-color: #ffebeb;
+  color: #ff0000;
+}
+
+.two-wrap .left li:nth-child(2) a {
+  width: 50%;
+}
+
+.two-wrap .left li:nth-child(2) a div {
+  padding-left: 0.1333rem;
+  padding-top: 0.1333rem;
+}
+
+.two-wrap .left li:nth-child(2) a div img {
+  width: 1.8133rem;
+}
+
+.two-wrap .left li:nth-child(2) a div span {
+  width: 1.6rem;
+  background-color: #fff6ed;
+  color: #b95a17;
+}
+
+.two-wrap .left li:nth-child(2) a:first-child {
+  background: url(../images/潮流电子.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.two-wrap .left li:nth-child(2) a:nth-child(2) {
+  background: url(../images/会员.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.two-wrap .left li:nth-child(3) {
+  width: 4.5333rem;
+  overflow: hidden;
+  position: relative;
+  flex: 2.07;
+  align-items: center;
+  border-radius: 0.2667rem;
+}
+
+.two-wrap .left li:nth-child(3) .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.two-wrap .left li:nth-child(3) .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.two-wrap .left li:nth-child(3) .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.two-wrap .left li:nth-child(3) a {
+  height: 7.12rem;
+  padding-top: 0;
+  justify-content: center;
+}
+
+.two-wrap .left li:nth-child(3) a img {
+  width: 100%;
+}
+
+.two-wrap .left li:nth-child(3) a::before {
+  width: 100%;
+  height: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background: url(../images/焕新节.png) no-repeat;
+  background-size: 100%;
+}
+
+.two-wrap .left li:nth-child(3) .swiper-pagination {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.two-wrap .left li:nth-child(3) ol .current {
+  width: 0.24rem;
+  background-color: #fff;
+}
+
+.two-wrap .right li a span {
+  width: 1.2533rem;
+  background-color: #fff6ed;
+  text-align: center;
+  color: #b95a17;
+}
+
+.two-wrap .right li:nth-child(1) a {
+  background: url(../images/排行榜.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.two-wrap .right li:nth-child(2) a {
+  background: url(../images/直播.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.two-wrap .right li:nth-child(2) a div:first-child span {
+  width: 1.84rem;
+}
+
+.two-wrap .right li:nth-child(n + 3) {
+  background: url(../images/盒子.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.two-wrap .right li:nth-child(n + 3) a {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+  color: #fff;
+}
+
+.two-wrap .right li:nth-child(n + 3) a h4 {
+  font-size: 0.3333rem;
+}
+
+.two-wrap .right li:nth-child(n + 3) a img {
+  width: 1.6rem;
+  margin-top: 0.2rem;
+}
+
+.two-wrap .right li:nth-child(n + 3) a span {
+  bottom: 0.16rem;
+  background-color: #ff4b19;
+  color: #fff;
+}
+
+.two-wrap .right li:nth-child(n + 3) a:nth-child(1) img {
+  margin-left: 0.32rem;
+}
+
+.two-wrap .right li:nth-child(n + 3) a:nth-child(1) span {
+  transform: translateX(-47%);
+  width: 1.6rem;
+}
+
+.two-wrap .right li:nth-child(n + 3) a:nth-child(2) img {
+  margin-left: 0.1733rem;
+}
+
+.two-wrap .right li:nth-child(n + 3) a:nth-child(2) span {
+  transform: translateX(-54%);
+  width: 1.6667rem;
+}
+
+.like-hd {
+  height: 0.8rem;
+}
+
+.like-hd img {
+  width: 100%;
+}
+
+.like-bd {
+  display: flex;
+  padding: 0 0.3333rem;
+}
+
+.like-bd ul {
+  flex: 1;
+}
+
+.like-bd ul li {
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 0.2667rem;
+  border-radius: 0.1333rem;
+}
+
+.like-bd ul li a:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.like-bd ul li a:nth-child(1) img {
+  width: 100%;
+  margin-bottom: 0.1333rem;
+}
+
+.like-bd ul li a:nth-child(1) h4 {
+  /* 溢出部分隐藏 */
+  overflow: hidden;
+  /* 文本用省略号替代超出的部分 */
+  text-overflow: ellipsis;
+  /* 弹性伸缩盒子模型显示 */
+  display: -webkit-box;
+  /* 限制在一个块元素显示的文本的行数 */
+  -webkit-line-clamp: 2;
+  /* 设置或检索伸缩盒对象的子元素的排列方式 */
+  -webkit-box-orient: vertical;
+  height: 0.93rem;
+  padding: 0 0.1333rem;
+  margin-bottom: 0.5333rem;
+  color: #333;
+  font-size: 0.3333rem;
+}
+
+.like-bd ul li a:nth-child(1) .price {
+  color: #ff4422;
+  font-weight: 700;
+  font-size: 0.32rem;
+  padding-left: 0.2rem;
+  margin-bottom: 0.1067rem;
+}
+
+.like-bd ul li a:nth-child(1) .price i {
+  padding-left: 0.04rem;
+  font-style: normal;
+  font-size: 0.48rem;
+}
+
+.like-bd ul li a:nth-child(1) .discounts {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0;
+  padding: 0 0.2rem;
+  color: #333;
+  font-size: 0.2133rem;
+}
+
+.like-bd ul li a:nth-child(1) .discounts span[class^="discounts"] {
+  display: inline-block;
+  padding: 0 0.16rem;
+  background-color: #fefbee;
+  border: .0133rem solid #ffbb00;
+  border-radius: 0.0667rem;
+}
+
+.like-bd ul li a:nth-child(1) .discounts img {
+  position: relative;
+  top: 0.2rem;
+  left: 0;
+  width: 0.64rem;
+  height: 0.32rem;
+}
+
+.like-bd ul li a:nth-child(1) .eval {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 1.3333rem;
+  color: #999;
+  font-size: 0.2667rem;
+}
+
+.like-bd ul li a:nth-child(2) {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 0.2667rem;
+  padding: 0.24rem 0;
+  color: #666;
+  font-size: 0.32rem;
+  border-top: 0.0133rem solid #e5e5e5;
+}
+
+.like-bd ul li a:nth-child(2) img {
+  width: 0.56rem;
+  margin-right: 0.1333rem;
+}
+
+.like-bd ul li a:nth-child(2)::after {
+  position: absolute;
+  right: 0;
+  content: '';
+  width: 0.1333rem;
+  height: 0.24rem;
+  background: url(../images/右箭头.png) no-repeat;
+  background-size: 100%;
+}
+
+.like-bd .bd-left {
+  padding-right: 0.1333rem;
+}
+
+.like-bd .bd-left li:nth-child(3) .eval {
+  left: 1.6rem;
+}
+
+.like-bd .bd-right {
+  padding-left: 0.1333rem;
+}
+
+.like-bd .bd-right li:nth-child(1) .eval {
+  left: 1.6rem;
+}
+
+.like-bd .bd-right li:nth-child(2) .eval,
+.like-bd .bd-right li:nth-child(3) .eval {
+  left: 1.0667rem;
+}
+
+/*底部模块样式*/
+footer img {
+  width: 100%;
+  margin-bottom: 1.3333rem;
+}
+
+/*底部登录模块样式*/
+.login {
+  position: fixed;
+  bottom: 1.3333rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  height: 1.2rem;
+  z-index: 999;
+}
+
+.login a {
+  display: block;
+  height: 100%;
+}
+
+.login a img {
+  width: 100%;
+}
+
+.foot-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  height: 1.3333rem;
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+.foot-nav ul {
+  display: flex;
+  height: 100%;
+}
+
+.foot-nav ul li {
+  flex: 1;
+  display: flex;
+}
+
+.foot-nav ul li a {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-nav ul li a img {
+  width: 0.64rem;
+  height: 0.64rem;
+}
+
+.foot-nav ul li a span {
+  font-size: 0.2667rem;
+  color: #666;
+}
+
+.foot-nav ul li .current span {
+  font-weight: 700;
+  color: #000;
+}
